@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KalkulatorActivity"
+    android:orientation="vertical"
+    android:background="@drawable/layoutdasar">
+
+    <TextView
+        android:id="@+id/tv_MasukanAngka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="MASUKAN DUA ANGKA"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_MasukanAngka"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:hint="Masukan Angka 1"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_input2"
+        android:layout_below="@id/et_input1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:hint="Masukan Angka 2"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_tambah"
+        android:layout_below="@id/et_input2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="+"
+        android:layout_marginLeft="10dp"
+        android:background="@color/pink"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/bt_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_input2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/bt_tambah"
+        android:text="-"
+        android:textColor="@color/white"
+        android:background="@color/pink"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_kali"
+        android:layout_below="@id/et_input2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:text="x"
+        android:layout_marginRight="10dp"
+        android:background="@color/pink"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/bt_bagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_input2"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/bt_kali"
+        android:text="/"
+        android:background="@color/pink"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_bersih"
+        android:layout_below="@id/bt_tambah"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="BERSIHKAN"
+        android:background="@drawable/button"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HASIL"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:id="@+id/tv_hasil"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/bt_bersih"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:id="@+id/tv_hasilakhir"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tv_hasil"
+        android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>
